@@ -1,0 +1,38 @@
+projects:
+  maven-mcp-server:
+    name: "Maven MCP Server"
+    location: "/users/balajiv/documents/coderepos/mcpservers/test-maven/maven-mcp-server"
+    summary:
+      description: "Model Context Protocol server for Maven integration"
+      stack:
+        backend:
+          - "TypeScript"
+          - "Node.js"
+          - "@modelcontextprotocol/sdk"
+    requirements:
+      path: "./docs/requirements.md"
+    standards:
+      path: "./docs/standards.md"
+    schema:
+      path: "./docs/schema.md"
+  ccaa-backend:
+    name: "CCAA Backend Server"
+    location: "/Users/balajiv/Documents/coderepos/alumini/ccaa-backend"
+    summary:
+      description: "Career Counselling and Academic Assistance (CCAA) Backend Service"
+      stack:
+        backend:
+          - "Node.js"
+          - "Express"
+          - "TypeScript"
+          - "MySQL"
+        tools:
+          - "JWT for authentication"
+          - "Winston for logging"
+          - "Jest for testing"
+    requirements:
+      path: "./docs/requirements.md"
+    standards:
+      path: "./docs/standards.md"
+    schema:
+      path: "./docs/schema.md"
