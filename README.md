@@ -35,7 +35,7 @@ chmod +x start-server.sh
 
 To use this server with Claude, you need to update your Claude configuration to include the terminal MCP server.
 
-Update your Claude configuration file (typically located at `~/.config/claude/config.json` or similar) to include the following:
+Update your Claude configuration file (typically located at `~/.config/claude/claude_desktop_config.json` or similar) to include the following:
 
 ```json
 {
