@@ -1,5 +1,9 @@
 {
   "allowedPaths": [
-    "/Users/yourUserName/Documents/coderepos"
+    "E:\\projects\\TNSchoolAlumini\\code_repo\\admin-module-node",
+    "E:\\projects\\TNSchoolAlumini\\code_repo\\admin_module\\alumini-admin-web-app",
+"E:\\projects\\TNSchoolAlumini\\code_repo\\BE\\AluminiApp",
+"E:\\temp\\POI",
+"E:\\projects\\aceProTracker"
   ]
 }

@@ -5,6 +5,7 @@ import { dirname, join } from 'path';
 import { log } from '../utils/simpleLog.js';
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import { isPathAllowed } from '../utils/configValidator.js';
+import { detectOS } from '../utils/osDetection.js';
 
 // Define the parameters schema
 export const TerminalParametersSchema = z.object({
@@ -25,15 +26,18 @@ interface TerminalTool extends Tool {
   }>;
 }
 
+// Detect OS and create appropriate description
+const osInfo = detectOS();
+
 export const terminalTool: TerminalTool = {
   name: 'terminal',
-  description: 'Execute terminal commands in a specified directory in macbook',
+  description: `Execute terminal commands in a specified directory (${osInfo.description})`,
   inputSchema: {
     type: 'object',
     properties: {
       command: {
         type: 'string',
-        description: 'Terminal command to execute'
+        description: `Terminal command to execute (${osInfo.type === 'windows' ? 'PowerShell' : osInfo.shell} commands)`
       },
       workingDir: {
         type: 'string',
